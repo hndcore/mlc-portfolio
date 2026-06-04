@@ -10,8 +10,8 @@ const CoverSection = () => {
           <span className="text-lime-300">Better software.</span>
         </h1>
         <p className="max-w-2xl text-base leading-8 text-zinc-400">
-          Senior Frontend Engineer with a focus on code quality, testing and
-          scalable architectures. I help teams build software that lasts.
+          Building software is only part of the job. Keeping it healthy is where
+          things get interesting.
         </p>
       </div>
     </section>

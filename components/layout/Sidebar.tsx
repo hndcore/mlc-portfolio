@@ -7,7 +7,6 @@ import { MapPin } from "lucide-react";
 
 export function Sidebar() {
   const pathname = usePathname();
-  console.log("Current pathname:", pathname);
 
   return (
     <aside className="hidden h-dvh w-80 shrink-0 border-r border-white/10 px-8 py-10 lg:flex lg:flex-col">
@@ -56,7 +55,7 @@ export function Sidebar() {
       <div className="mt-auto space-y-5 text-xs text-zinc-400">
         <a
           href={"https://www.google.com/maps/place/Sevilla"}
-          className="flex items-center transition hover:text-lime-300"
+          className="flex items-center transition hover:text-lime-300 mt-4"
         >
           <span className="w-6 font-mono text-[0.65rem] text-lime-300 mb-[3px]">
             <MapPin size="0.85rem" />
