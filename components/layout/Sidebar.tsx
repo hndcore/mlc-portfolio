@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteNavItems } from "./site-nav.data";
 import { MapPin } from "lucide-react";
+import { VERSION } from "@/utils/versioning";
 
 export function Sidebar() {
   const pathname = usePathname();
@@ -68,6 +69,7 @@ export function Sidebar() {
           No copyright. Free to use, modify and distribute.
           <br />
           With ❤️
+          <br />v{VERSION}
         </p>
       </div>
     </aside>

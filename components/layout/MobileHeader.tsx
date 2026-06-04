@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { siteNavItems } from "./site-nav.data";
+import { VERSION } from "@/utils/versioning";
 
 function normalizePath(path: string) {
   return path === "/" ? path : path.replace(/\/$/, "");
@@ -69,6 +70,7 @@ export function MobileHeader() {
                 </li>
               );
             })}
+            <li className="italic text-xs text-zinc-400">v{VERSION}</li>
           </ul>
         </nav>
       )}
