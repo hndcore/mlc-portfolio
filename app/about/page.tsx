@@ -11,7 +11,7 @@ const AboutPage = () => {
       <section className="grid gap-10 border-b border-white/10 pb-12 lg:grid-cols-[minmax(0,1fr)_13.5rem] lg:items-start lg:gap-16 xl:grid-cols-[minmax(0,44rem)_13.5rem]">
         <div className="max-w-3xl space-y-8">
           <h1 className="font-mono text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            About Me
+            About Me<span className="text-lime-300">.</span>
           </h1>
           <p className="max-w-2xl font-mono text-base leading-8 text-zinc-300 sm:text-lg">
             Curious about software, people and ideas. Always learning,
