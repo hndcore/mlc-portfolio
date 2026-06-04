@@ -23,7 +23,7 @@ export function MobileHeader() {
           className="font-mono text-base font-semibold text-lime-300"
           onClick={() => setIsOpen(false)}
         >
-          ML &gt;_
+          MLC &gt;_
         </Link>
         <button
           type="button"
