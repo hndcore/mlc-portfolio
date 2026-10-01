@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { Experience } from "../experience.data";
 
 type ExperienceBlockProps = {
@@ -11,11 +10,11 @@ const ExperienceBlock = ({
   hasSeparator,
 }: ExperienceBlockProps) => {
   return (
-    <li className="relative border-b border-white/10 py-8 first:pt-0 last:border-b-0 lg:border-b-0 lg:pl-20">
+    <li className="relative border-b border-white/10 py-7 first:pt-0 last:border-b-0 lg:border-b-0 lg:pl-16">
       {hasSeparator && (
         <span
           aria-hidden="true"
-          className="absolute bottom-0 left-20 right-0 hidden border-b border-white/10 lg:block"
+          className="absolute bottom-0 left-16 right-0 hidden border-b border-white/10 lg:block"
         />
       )}
       <span
@@ -27,31 +26,20 @@ const ExperienceBlock = ({
         className="absolute left-[0.5625rem] top-10 z-10 hidden h-3 w-3 rounded-full bg-lime-300 shadow-[0_0_24px_rgba(190,242,100,0.45)] lg:block"
       />
 
-      <article className="grid gap-6 lg:grid-cols-[10rem_minmax(0,1fr)] lg:gap-x-8 lg:gap-y-5 2xl:grid-cols-[9rem_5.5rem_minmax(13rem,1fr)_minmax(20rem,1.55fr)] 2xl:gap-8">
+      <article className="grid gap-5 lg:grid-cols-[9.5rem_minmax(0,1fr)] lg:gap-x-7 lg:gap-y-4 2xl:grid-cols-[8.5rem_minmax(12rem,0.7fr)_minmax(20rem,1.45fr)] 2xl:gap-x-6 2xl:gap-y-5">
         <div className="font-mono text-sm lg:col-start-1 lg:row-start-1 2xl:col-auto 2xl:row-auto">
           <p className="text-white">{experience.period}</p>
-          <p className="mt-3 text-zinc-400">{experience.location}</p>
-        </div>
-
-        <div className="relative h-20 w-20 overflow-hidden rounded-md border border-white/10 bg-white/[0.04] shadow-2xl shadow-black/30 lg:col-start-1 lg:row-start-2 2xl:col-auto 2xl:row-auto">
-          <Image
-            src={experience.logoSrc}
-            alt={experience.logoAlt}
-            fill
-            sizes="80px"
-            className="object-contain"
-          />
+          <p className="mt-2.5 text-zinc-400">{experience.location}</p>
         </div>
 
         <div className="font-mono lg:col-start-2 lg:row-start-1 2xl:col-auto 2xl:row-auto">
           <h2 className="text-lg font-semibold text-white">
             {experience.company}
           </h2>
-          <p className="mt-3 text-sm text-lime-300">{experience.role}</p>
-          <p className="mt-3 text-sm text-zinc-400">{experience.category}</p>
+          <p className="mt-2.5 text-sm text-lime-300">{experience.role}</p>
         </div>
 
-        <div className="min-w-0 space-y-5 lg:col-start-2 lg:row-start-2 2xl:col-auto 2xl:row-auto">
+        <div className="min-w-0 space-y-4 lg:col-start-2 lg:row-start-2 2xl:col-auto 2xl:row-auto">
           <ul className="space-y-2 font-mono text-sm leading-6 text-zinc-300">
             {experience.highlights.map((highlight) => (
               <li
@@ -67,7 +55,7 @@ const ExperienceBlock = ({
             ))}
           </ul>
 
-          <ul className="flex flex-wrap gap-3">
+          <ul className="flex flex-wrap gap-2.5">
             {experience.technologies.map((technology) => (
               <li
                 key={technology}

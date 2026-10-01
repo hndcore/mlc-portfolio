@@ -20,7 +20,9 @@ const ExperiencePage = () => {
         </div>
       </section>
 
-      <ExperienceTimeline experiences={experiences} />
+      <div className="mx-auto max-w-6xl">
+        <ExperienceTimeline experiences={experiences} />
+      </div>
     </main>
   );
 };

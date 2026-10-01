@@ -50,3 +50,21 @@ nav {
   background: #bef264;
   color: #05080d;
 }
+
+@keyframes project-image-in {
+  from {
+    transform: translateX(var(--slide-offset));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes project-image-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * var(--slide-offset)));
+  }
+}

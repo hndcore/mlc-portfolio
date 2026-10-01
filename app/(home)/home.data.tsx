@@ -5,9 +5,9 @@ import {
   Globe,
   Building2,
   BugOff,
-  ShieldCheck,
-  SquareCheckBig,
-  Users,
+  Layers3,
+  ToggleRight,
+  ChartNoAxesCombined,
 } from "lucide-react";
 
 const getYearsExperience = () => {
@@ -27,7 +27,7 @@ export const homeStats: HomeStat[] = [
   {
     icon: <Code className="h-6 w-6 mt-1" />,
     value: "73%",
-    label: "Frontend Bugs Reduced",
+    label: "Average Bugs Reduced",
   },
   {
     icon: <Building2 className="h-6 w-6 mt-1" />,
@@ -45,7 +45,7 @@ export const currentFocus: CurrentFocus = {
   role: "Senior Frontend Engineer",
   company: "Capitole Consulting",
   description:
-    "Leading frontend development for an international insurance/fintech platform. Driving quality, testing and engineering standards while supporting teams, technical initiatives and product delivery.",
+    "Building frontend features for an international insurance/fintech platform. Improving quality, testing and engineering practices while helping small teams coordinate delivery and collaborating across teams.",
   tags: [
     "React",
     "TypeScript",
@@ -61,26 +61,26 @@ export const currentFocus: CurrentFocus = {
 export const selectedWork: SelectedWork[] = [
   {
     icon: <BugOff />,
-    title: "Reducing frontend bugs by an average of 73%",
+    title: "Reducing frontend bugs by over 83%",
     description:
-      "Implementing best practices, code reviews and quality standards across the team.",
+      "Improving reviews, testing and quality checks during a quarterly release cycle.",
   },
   {
-    icon: <SquareCheckBig />,
-    title: "Building a testing strategy",
+    icon: <Layers3 />,
+    title: "Modernizing a core back-office frontend",
     description:
-      "Introducing testing culture and increasing coverage in a complex fintech product.",
+      "Migrating to React 18 and Node 20, with an 18% reduction in lead time.",
   },
   {
-    icon: <ShieldCheck />,
-    title: "SonarQube integration",
+    icon: <ToggleRight />,
+    title: "Reducing deployment risk by 40%",
     description:
-      "Improving code health metrics and maintaining high quality standards.",
+      "Building feature flags to control releases and enable fast rollbacks.",
   },
   {
-    icon: <Users />,
-    title: "Cross-team frontend support",
+    icon: <ChartNoAxesCombined />,
+    title: "Giving business teams direct access to KPIs",
     description:
-      "Collaborating with multiple teams to ship features faster and with confidence.",
+      "Building microfrontend back-office tools for business analysis and decision-making.",
   },
 ];

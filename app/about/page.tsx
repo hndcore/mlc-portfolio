@@ -75,7 +75,7 @@ const AboutPage = () => {
             environments, understanding how things work and becoming productive
             quickly. Over the years I&apos;ve had the opportunity to contribute
             not only through code, but also through quality initiatives, testing
-            strategies, technical leadership and cross-team collaboration.
+            strategies, technical guidance and cross-team collaboration.
           </p>
         </div>
       </Section>

@@ -14,6 +14,6 @@ describe("Home", () => {
     });
 
     expect(heading).toBeTruthy();
-    expect(projectsLink.getAttribute("href")).toBe("/projects");
+    expect(projectsLink.getAttribute("href")).toBe("/work");
   });
 });
