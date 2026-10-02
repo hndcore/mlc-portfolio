@@ -26,12 +26,6 @@ export const contactFormFields = [
     placeholder: "your.email@example.com",
   },
   {
-    name: "subject",
-    label: "Subject",
-    type: "text",
-    placeholder: "What's this about?",
-  },
-  {
     name: "message",
     label: "Message",
     placeholder: "Tell me more...",

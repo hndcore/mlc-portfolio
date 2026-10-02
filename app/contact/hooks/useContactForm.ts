@@ -12,7 +12,6 @@ import {
 const contactFormSchema = z.object({
   name: z.string().trim().min(2, "Use at least 2 characters."),
   email: z.email("Use a valid email address."),
-  subject: z.string().trim().min(4, "Use at least 4 characters."),
   message: z.string().trim().min(10, "Use at least 10 characters."),
 });
 
@@ -61,7 +60,6 @@ export function useContactForm() {
     defaultValues: {
       name: "",
       email: "",
-      subject: "",
       message: "",
     },
   });

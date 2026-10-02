@@ -35,6 +35,8 @@ const ContactPage = () => {
                     <li key={link.href}>
                       <a
                         href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="group grid grid-cols-[1.5rem_1fr] gap-4 font-mono"
                       >
                         <Icon

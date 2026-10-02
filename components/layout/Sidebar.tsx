@@ -56,6 +56,8 @@ export function Sidebar() {
       <div className="mt-auto space-y-5 text-xs text-zinc-400">
         <a
           href={"https://www.google.com/maps/place/Sevilla"}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center transition hover:text-lime-300 mt-4"
         >
           <span className="w-6 font-mono text-[0.65rem] text-lime-300 mb-[3px]">
